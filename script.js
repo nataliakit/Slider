@@ -12,6 +12,12 @@ const activeSlide = n => {
     slides[n].classList.add('active');
 }
 
+const currentSlide = (n) => {
+    index = n;
+    activeSlide(index);
+    activeDot(index);
+}
+
 const activeDot = n => {
     for (dot of dots) {
         dot.classList.remove('active');
@@ -42,6 +48,7 @@ const prevSlide =() => {
         activeDot(index);
     }
 }
+
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
