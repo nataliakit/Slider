@@ -37,7 +37,7 @@ h1 {
     top: 0;
     height: 100%;
     width: 50px;
-    background-color: gray;
+    background-color: #999999;
     opacity: 0.4;
     cursor: pointer;
     transition: opacity .2s ease-in-out;
